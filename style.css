@@ -1,0 +1,51 @@
+:root {
+    font-size: 30px;
+    font-family:'Pixelify Sans';
+    --primarybg-color: #000000;
+    --primarytxt-color: #33ff00;
+    --nav-height: 3rem;
+}
+
+body {
+    color: var(--primarytxt-color);
+    background-color: var(--primarybg-color);
+    margin: 0;
+    padding: 0;   
+}
+
+.Navbar {
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(68, 68, 68);
+    display: flex;
+    box-shadow: 0px 5px 2px 1px #33ff00;
+}
+
+.Navbar-Nav {
+    margin: 0;
+    padding: 0;  
+    display: flex;
+    justify-content: space-around;
+    max-height: 3rem;
+    width: 100%;
+}
+
+.Nav-item {
+    background-image: url("box.png");
+    background-size: 100% 100%;
+    margin: 10px 1rem;
+    list-style: none;
+    width: 7rem;
+    text-align: center;
+    line-height: 70px;
+    font-size: 0.75rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.Nav-link {
+    color: var(--primarytxt-color);
+    text-shadow: 4px 4px 10px #1efe00;
+}
