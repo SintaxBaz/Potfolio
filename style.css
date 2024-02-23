@@ -3,6 +3,7 @@
     font-family:'Pixelify Sans';
     --primarybg-color: #000000;
     --primarytxt-color: #33ff00;
+    --selected-color: red;
     --nav-height: 3rem;
 }
 
@@ -30,6 +31,11 @@ body {
     width: 100%;
 }
 
+@keyframes navbar_img{
+    from{margin:10px 1rem}
+    to{margin: 13px 3rem}
+}
+
 .Nav-item {
     background-image: url("box.png");
     background-size: 100% 100%;
@@ -41,11 +47,41 @@ body {
     font-size: 0.75rem;
 }
 
+.Nav-item:hover {
+    background-image: url("box.png");
+    background-size: 100% 100%;
+    margin: 10px 1rem;
+    list-style: none;
+    width: 7rem;
+    text-align: center;
+    line-height: 70px;
+    font-size: 0.75rem;
+    animation-name: navbar_img;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
 a:link {
     text-decoration: none;
 }
 
+@keyframes greentored {
+    from{color: var(--primarytxt-color)}
+    to{color: var(--selected-color)}
+    form{text-shadow: 4px 4px 10px #33ff00}
+    to{text-shadow: 4px 4px 10px red}
+}    
+
 .Nav-link {
     color: var(--primarytxt-color);
-    text-shadow: 4px 4px 10px #1efe00;
+    text-shadow: 4px 4px 10px #33ff00;
 }
+
+.Nav-link:hover {
+    color: var(--primarytxt-color);
+    text-shadow: 4px 4px 10px #33ff00;
+    animation-name: greentored;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
