@@ -111,5 +111,9 @@ a:link {
 #img {
     float: right;
     margin: 1rem;
+    margin-top: 0rem;
 }
 
+main{
+    margin: 3rem;
+}
