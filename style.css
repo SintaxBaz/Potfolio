@@ -111,18 +111,17 @@ a:link {
 #img {
     float: right;
     margin: 1rem;
-    margin-top: 0rem;
     border: 10px outset darkmagenta;
 }
 
 main{
-    margin: 3rem;
+    margin: 3rem 2rem;
+
 }
 
 .contacts{
-    margin: 0rem 5rem;
-    margin-bottom: 3rem;
-    height: 4rem;
+    height: 120px;
+    margin: 2rem 2rem;
     background-color: #33ff00;
-    box-sizing: content-box;
+
 }
