@@ -2,7 +2,7 @@
     font-size: 30px;
     font-family:'Pixelify Sans';
     --primarybg-color: #000000;
-    --primarytxt-color: #33ff00;
+    --primarytxt-color: rgb(51, 255, 0);
     --selected-color: red;
     --nav-height: 3rem;
 }
@@ -119,9 +119,31 @@ main{
 
 }
 
+@keyframes contactimg{
+    from{margin:2rem 2rem}
+    to{margin: 3rem 3rem}
+}
+
+@keyframes rev_contactimg{
+    from{margin: 3rem 3rem}
+    to{margin:2rem 2rem}
+}
+
 .contacts{
     height: 120px;
     margin: 2rem 2rem;
-    background-color: #33ff00;
-
+    background-image: url("longbox.png");
+    background-size: 100% 100%;
+    animation-name: rev_contactimg;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.contacts:hover{
+    height: 120px;
+    margin: 2rem 2rem;
+    background-image: url("longboxred.png");
+    background-size: 100% 100%;
+    animation-name: contactimg;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
