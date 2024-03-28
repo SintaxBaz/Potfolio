@@ -43,7 +43,7 @@ body {
 
 
 .Nav-item {
-    background-image: url("box.png");
+    background-image: url("images/box.png");
     background-size: 100% 100%;
     margin: 10px 1rem;
     list-style: none;
@@ -57,7 +57,7 @@ body {
 }
 
 .Nav-item:hover {
-    background-image: url("redvbox.png");
+    background-image: url("images/redvbox.png");
     background-size: 100% 100%;
     margin: 10px 1rem;
     list-style: none;
@@ -132,18 +132,80 @@ main{
 .contacts{
     height: 120px;
     margin: 2rem 2rem;
-    background-image: url("longbox.png");
+    background-image: url("images/longbox.png");
     background-size: 100% 100%;
     animation-name: rev_contactimg;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .contacts:hover{
     height: 120px;
     margin: 2rem 2rem;
-    background-image: url("longboxred.png");
+    background-image: url("images/longboxred.png");
     background-size: 100% 100%;
     animation-name: contactimg;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+}
+
+@keyframes select {
+    from{background-color: rgb(38, 38, 38);
+        color:white;}
+    to{background-color: #b0b0b0;
+        color:rgb(0, 0, 0);}
+}
+
+@keyframes select_rev {
+    to{background-color: rgb(38, 38, 38);
+        color:rgb(0, 0, 0);}
+    from{background-color: #b0b0b0;
+        color:white;}
+}
+
+.keystroke {
+    background-color: rgb(38, 38, 38);
+    width: 45%;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 10px outset rgb(48, 48, 48);
+    color:#b0b0b0;
+    line-height:100px;
+    animation-name: select_rev;
+}
+
+.keystroke:hover {
+    background-color: rgb(38, 38, 38);
+    width: 45%;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 10px outset rgb(48, 48, 48);
+    color:#b0b0b0;
+    line-height:100px;
+    animation-name: select;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.project_Container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+}
+
+.lol {
+    font-size: 200px;
+    text-align: center;
+}
+
+
+.contact_info {
+    width: 50%;
+    height: 300px;
+    background-color: #b0b0b0;
 }
